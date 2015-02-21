@@ -1,25 +1,34 @@
 <html>
 	<head>
 		<title>Github API</title>
+		<link rel="stylesheet" type="text/css" href="styles.css">
 	</head>
-	<body ng-app="github-api">
 
+	<body ng-app="github-api" ng-controller="GitHubController">
+		<header>
+			<div class="header-text-container">
+				<h1>Search Github Users</h1>
+			</div>
+		</header>
 
+		<div class="input-wrapper">
+			<form>
+				<input ng-model="searchText" placeholder="Enter Username"/>
+				<button ng-click="getUserData()">Search</button>
+			</form>
+		</div>
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+		<div class="user-data-container">
+			<img class="user-avatar" src="{{user.avatar_url}}">
+			<div class="user-info">
+				<h2>{{user.name}}</h2>
+				<h3>{{user.location}}</h3>
+				<br>
+				<h3>{{user.email}}</h3>
+				<h3>{{user.company}}</h3>
+				<h3>Public Repositories: {{user.public_repos}}</h3>
+			</div>
+		</div>
 
 
 		<script src="http://cdnjs.cloudflare.com/ajax/libs/angular.js/1.3.3/angular.min.js"></script>

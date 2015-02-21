@@ -1,0 +1,81 @@
+/**{
+	border: 1px solid red;
+}
+*/
+html, body {
+	height: 100%;
+	width: 100%;
+	margin: 0;
+}
+
+header {
+	width: 100%;
+	height: 10%;
+	background: #d2dae5;
+}
+
+.header-text-container {
+	height: 100%;
+	width: 100%;
+	padding-top: 12px;
+
+}
+
+h1 {
+	font-family: "Myriad Set Pro", sans-serif;
+	font-size: 44px;
+	margin: auto;
+	text-align: center;
+}
+
+.input-wrapper {
+	width: 100%;
+	text-align: center;
+	margin: 30px;
+}
+
+input {
+	width: 150px;
+}
+
+.user-data-container {
+	height: 500px;
+	width: 100%;
+	margin: auto;
+}
+
+img {
+	height: 200px;
+	width: 200px;
+	/*border-radius: 100%;*/
+	display: block;
+	margin-left: auto;
+	margin-right: auto;
+	padding-bottom: 20px;
+}
+
+h2 {
+	font-family: "Myriad Set Pro", sans-serif;
+	font-size: 28px;
+	margin: auto;
+	text-align: center;
+	line-height: 32px;
+}
+
+h3 {
+	font-family: "Myriad Set Pro", sans-serif;
+	font-size: 18px;
+	margin: auto;
+	text-align: center;
+	line-height: 22px;
+}
+
+
+
+
+
+
+
+
+
+
